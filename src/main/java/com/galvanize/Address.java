@@ -43,6 +43,7 @@ public class Address {
 		return zip;
 	}
 
+	//override toString method
 	@Override 
 	public String toString() {
 		StringBuilder completeAddress = new StringBuilder();
