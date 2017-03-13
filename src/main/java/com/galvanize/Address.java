@@ -45,7 +45,16 @@ public class Address {
 
 	@Override 
 	public String toString() {
-		return street + ", " + city + ", " + state + " " + zip;
+		StringBuilder completeAddress = new StringBuilder();
+		completeAddress.append(this.getStreet());
+		completeAddress.append(", ");
+		completeAddress.append(this.getCity());
+		completeAddress.append(", ");
+		completeAddress.append(this.getState());
+		completeAddress.append(" ");
+		completeAddress.append(this.getZip());
+		return completeAddress.toString();
+		//return (this.getStreet() + ", " + this.getCity() + ", " + this.getState() + " " + this.getZip());
 	}
 
 }
